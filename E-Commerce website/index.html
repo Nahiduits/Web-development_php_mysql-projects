@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-light ">
+  <nav class="navbar bg-secondary fixed-top shadow ">
+    <div class="container">
+      <a class="navbar-brand fw-bold border shadow-effect" href="#"><span
+          class="p-2 bg-light text-dark shadow">Nahid</span><span class="p-2 bg-black text-white shadow">Store</span>
+      </a>
+      <button class="navbar-toggler bg-light border-dark shadow" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="navbar-brand fw-bold border shadow-effect" href="#"><span
+              class="p-2 bg-light text-dark shadow">Nahid</span><span
+              class="p-2 bg-black text-white shadow">Store</span> </a>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <ul class="navbar-nav  justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <br><br><br><br>
+
+  <div class="container border shadow ">
+    <div class="row">
+      <div class="col-12 col-lg-6 text-center mar">
+        <h3 class="text-bold">Welcome To E-Shop</h3>
+        <p class="text-secondary">Buy from here</p>
+        <button class="btn btn-danger" onclick="location.href='product.html' "> Visit Our Products</button>
+      </div>
+      <div class="col-12 col-lg-6 ">
+        <div class="p-4">
+          <img src="images/print_tshirt.jpg" alt="" class="img-fluid bg-light ">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br>
+
+  <div class="container mx-auto mt-4 ">
+    <div class="row">
+      <div class="col-6 col-lg-4 ">
+        <img src="images/shirt3.jpg" class="img-fluid ps-4 py-4 img-1 " alt="">
+        <p class="heading-bigger fw-lg-bold text-lg-capitalize text-center text-light py-lg-4 mb-lg-0 ps-lg-4">Sale 30%
+        </p>
+        <p class="offer-title fw-lg-bold text-center text-light mt-lg-0  ps-lg-4">DON'T MISS THE CHANCE</p>
+        <button class="btn btn-danger btn1 mt-0" onclick="tatt()">Shop Now</button>
+      </div>
+
+      <div class="col-6 col-lg-4 ">
+        <img src="images/shirt4.jpg" class="img-fluid py-4 img-1" alt="">
+        <p class="heading-bigger fw-bold text-capitalize text-center text-light py-4 mb-0 ps-4">Sale 50%</p>
+        <p class="offer-title fw-bold text-center text-light mt-0  ps-4">DON'T MISS THE CHANCE</p>
+        <button class="btn btn-danger btn1 mt-0" onclick="tatt()">Shop Now</button>
+      </div>
+
+      <div class="col-6 col-lg-4 ">
+        <img src="images/shirt6.jpg" class="img-fluid ps-4 pe-4  py-4 mx-auto img-1" alt="">
+        <p class="heading-bigger fw-bold text-capitalize text-center text-light py-4 mb-0 ps-4">Sale 20%</p>
+        <p class="offer-title fw-bold text-center text-light mt-0  ps-4">DON'T MISS THE CHANCE</p>
+        <button class="btn btn-danger btn1 mt-0" onclick="tatt()">Shop Now</button>
+      </div>
+
+      <div class="col-6 col-lg-4">
+        <img src="images/shirt5.jpg" class="img-fluid mt-5 py-4 px-4 img-1" alt="">
+        <p class="heading-bigger fw-bold text-capitalize text-center text-light  mb-0 ps-4">Sale 30%</p>
+        <p class="offer-title fw-bold text-center text-light mt-0  ps-4">DON'T MISS THE CHANCE</p>
+        <button class="btn btn-danger btn1 mt-0" onclick="tatt()">Shop Now</button>
+      </div>
+
+      <div class="col-6 col-lg-4 ">
+        <img src="images/shirt7.jpg" class="img-fluid py-4 px-4 img-1" alt="">
+        <p class="heading-bigger fw-bold text-capitalize text-center text-light py-4 mb-0 ps-4">Sale 40%</p>
+        <p class="offer-title fw-bold text-center text-light mt-0  ps-4">DON'T MISS THE CHANCE</p>
+        <button class="btn btn-danger btn1 mt-0" onclick="tatt()">Shop Now</button>
+      </div>
+      <div class="col-6 col-lg-4 ">
+        <img src="images/shirt8.jpg" class="img-fluid py-4 px-4 img-1" alt="">
+        <p class="heading-bigger fw-bold text-capitalize text-center text-light py-4 mb-0 ps-4">Sale 20%</p>
+        <p class="offer-title fw-bold text-center text-light mt-0  ps-4">DON'T MISS THE CHANCE</p>
+        <button type="button" class="btn btn-danger btn1 mt-0" onclick="tatt()">Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br><br><br><br>
+
+  <div class="footer">
+    <div class="row g-4">
+      <div class="col-12 col-lg-3">
+        <div class="Ftext ps-4">
+          <h1>Trends</h1>
+          <p>Service</p>
+          <p>Customer</p>
+          <p>Satisfation</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <div class="Ftext ">
+          <h3>About US</h3>
+          <p>Adrress</p>
+          <p>Service</p>
+          <p>Customer</p>
+          <p>Satisfation</p>
+
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <div class="Ftext ps-4">
+          <h3>Contact</h3>
+          <p>Information</p>
+          <p>Comming up..</p>
+          <p>New Arrival</p>
+
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <div class="Ftext ps-4">
+          <h3>Trending</h3>
+          <p>Service</p>
+          <p>Customer</p>
+          <p>Shops</p>
+        </div>
+      </div>
+      <hr>
+      <p class="text-secondary text-center ">Copyright © Made By Nahid | All rights reserved. </p>
+    </div>
+  </div>
+  </div>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    const tatt = () => {
+      alert("Offer Is Off Now..")
+    }
+  </script>
+</body>
+
+</html>
